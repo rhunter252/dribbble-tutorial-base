@@ -1,0 +1,62 @@
+//* Content Section
+
+$display-font: "Playfair Display", serif;
+$body-font: "Open Sans", sans-serif;
+$background-color: #fef5f7;
+$beige: #ad7b7c;
+$red: #dd5748;
+$dark-red: #ad6a68;
+
+.content {
+  &__video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    margin-top: 50px;
+  }
+
+  &__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__mobile-container {
+    padding: 48px 48px 0px 48px;
+  }
+
+  &__title {
+    margin-top: 20px;
+    font-family: $display-font;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: $red;
+  }
+
+  &__mobile-images {
+    margin-top: 38px;
+  }
+
+  &__decoration {
+    width: 26.85px;
+    height: 26.85px;
+    transform: rotate(-45deg);
+    background-color: $red;
+    margin: 0 auto;
+  }
+
+  &__image-1 {
+    margin-bottom: 33px;
+    width: 100%;
+  }
+  &__image-2 {
+    margin-top: 33px;
+    width: 100%;
+  }
+}

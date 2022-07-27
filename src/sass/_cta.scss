@@ -1,0 +1,65 @@
+//* CTA Section
+
+$display-font: "Playfair Display", serif;
+$body-font: "Open Sans", sans-serif;
+$background-color: #fef5f7;
+$beige: #ad7b7c;
+$red: #dd5748;
+$dark-red: #ad6a68;
+
+.cta {
+  padding: 0 48px;
+  overflow-x: hidden;
+
+  &__title {
+    margin-bottom: 30px;
+    color: $red;
+    font-size: 16px;
+  }
+
+  &__body-text {
+    color: $dark-red;
+    line-height: 1.4;
+  }
+
+  &__button {
+    background-color: transparent;
+    font-family: $display-font;
+    text-transform: uppercase;
+    color: $beige;
+    font-size: 12px;
+    border: 2px solid $dark-red;
+    padding: 10px 50px;
+    margin-top: 50px;
+  }
+
+  &__button-border {
+    border: 2px solid $beige;
+    height: 36px;
+    width: 183px;
+    margin-top: -34px;
+    margin-left: 6px;
+  }
+
+  &__headline {
+    margin-top: 20px;
+    font-family: $display-font;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: $red;
+    white-space: nowrap;
+    width: 1200px;
+    margin-left: 48px;
+    animation: marquee 20s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
+}
